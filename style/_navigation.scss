@@ -1,0 +1,26 @@
+@use './variables' as *;
+
+.navigation {
+	height: 100%;
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+	writing-mode: sideways-lr;
+	text-orientation: mixed;
+	list-style: none;
+	font-size: 20px;
+	color: $black;
+}
+
+.navigation__item {
+	padding: 0 10px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	cursor: pointer;
+	position: relative;
+
+	&:hover,
+	&.active {
+		border-right: 3px solid $black;
+	}
+}
