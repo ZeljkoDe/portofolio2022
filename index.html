@@ -10,31 +10,30 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap">
     <link type="text/css" rel="stylesheet" href="./style/style.css">
-    <script defer type="module" src="app.js"></script>
+    <script defer src="all.js"></script>
     <title>zeljkoDe.</title>
 </head>
 
 <body>
     <nav>
         <ul class="navigation">
-            <li class="navigation__item"><a href="">tea?</a></li>
-            <li class="navigation__item active"><a href="">work!</a></li>
-            <li class="navigation__item"><a href="">me.</a></li>
+            <li class="navigation__item js-about">me.</li>
+            <li class="navigation__item active js-work">work!</li>
+            <li class="navigation__item js-contact">tea?</li>
         </ul>
     </nav>
     <main>
         <section class="information">
             <h1 class="information__title">zeljko<span>De.</span></h1>
             <h3 class="information__subtitle">frontend<span> developer</span></h3>
-            <p class="information__paragraph"><strong>Hey there!</strong> <br />
-                My name is Zeljko. I am a FrontEnd Developer, with a passion for creating beautiful web experiences.</p>
-            <a class="information__resume" href="">Resume</a>
-            <div class="information__links">
+            <p class="information__paragraph js-main-paragraph"></p>
+            <a class="information__resume js-main-button" href=""></a>
+            <!-- <div class="information__links">
                 <a href="https://github.com/ZeljkoDe" target="_blank"><img src="./assets/github.svg" alt="github logo"></a>
                 <a href="https://www.linkedin.com/in/zeljko-damnjanovic" target="_blank"><img src="./assets/linkedin.svg" alt="linkedin logo"></a>
-            </div>
+            </div> -->
         </section>
-        <section class="slider ">
+        <section class="slider js-slider">
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide one"></div>
